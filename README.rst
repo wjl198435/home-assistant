@@ -6,8 +6,13 @@ Home Assistant is a home automation platform running on Python 3. It is able to 
 To get started:
 
 .. code:: bash
-
+    conda create -n homeassistant python=3.6
     python3 -m pip install homeassistant
+    pip install aiohttp_cors
+    pip install sqlalchemy
+
+    mkdir -p /home/jack/.homeassistant/.pip_progress
+    
     hass --open-ui
 
 Check out `home-assistant.io <https://home-assistant.io>`__ for `a
